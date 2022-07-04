@@ -11,6 +11,8 @@ public static int countAllStars(int... galaxies) {
 	for(int stars : galaxies) {
 		totalStars = stars; // fix me!
 	} 
+
+	System.out.println("Salut Francois");
 	return totalStars;
 }
 

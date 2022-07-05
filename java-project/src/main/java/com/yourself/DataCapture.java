@@ -13,7 +13,7 @@ public class DataCapture {
  *
  * @return  a two-dimension array containing accelerometer data
  */
-private double[][] getSensorData() {
+private static double[][] getSensorData() {
     double[][] sensorData = {
 		{0.51231234125, 0.64536234265, 0.521362734526},
         {0.56131272345347, 0.126542435672, 0.156237345237},
@@ -23,25 +23,29 @@ private double[][] getSensorData() {
 }
 
 /**
+ * Build the json string from the given data.
+ * The data must be a two-dimensional double array
  * 
- *
+ * @return  a json string of the two-dimensional array
  */
 
-private String buildDataCaptureJson(double[][] data) {
+private static String buildDataCaptureJson(double[][] data) {
     Gson gson = new Gson(); // Remove
     return gson.toJson(data);
 }
 
-public String getDataCaptureJson() {
+/**
+ * Return the json formatted string of the latest data 
+ * capture registered.
+ *
+ * @return a data capture json string
+ */
+public static String getDataCaptureJson() {
     double[][] sensorData = getSensorData();
 
     String jsonString = buildDataCaptureJson(sensorData);
 
 	return jsonString;
-}
-
-public static int countAllStars(int... galaxies) {
-    return 5;
 }
 
 //{

@@ -7,7 +7,7 @@ import java.util.Scanner;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class UniverseTest {
+public class DataCaptureTest {
 
 	@Test
 	public void test() throws FileNotFoundException {

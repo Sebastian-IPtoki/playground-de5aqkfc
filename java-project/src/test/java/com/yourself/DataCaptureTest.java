@@ -13,7 +13,7 @@ public class UniverseTest {
 	public void test() throws FileNotFoundException {
 		try {
 			System.out.println(DataCapture.getDataCaptureJson());
-			Assert.assertEquals("Testing fixed json output : ", "{}", DataCapture.getDataCaptureJson())
+			Assert.assertEquals("Testing fixed json output : ", "{}", DataCapture.getDataCaptureJson());
 			success(true);
 
 			if (existsInFile("Arrays.stream(galaxies).sum()", new File("./src/main/java/com/yourself/Universe.java"))) {

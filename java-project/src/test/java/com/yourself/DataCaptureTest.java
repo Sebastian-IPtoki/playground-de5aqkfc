@@ -16,24 +16,23 @@ public class DataCaptureTest {
 			Assert.assertEquals("Testing fixed json output : ", "{}", DataCapture.getDataCaptureJson());
 			success(true);
 
-			if (existsInFile("Arrays.stream(galaxies).sum()", new File("./src/main/java/com/yourself/Universe.java"))) {
-				msg("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ");
-				msg("My personal Yoda, you are. 🙏", "           　★ °  ☆ ¸. ¸ 　★　 :.　 .   ");
-				msg("My personal Yoda, you are. 🙏", "__.-._     ° . .　　　　.　☾ ° 　. *   ¸ .");
-				msg("My personal Yoda, you are. 🙏", "'-._\\7'      .　　° ☾  ° 　¸.☆  ● .　　　");
-				msg("My personal Yoda, you are. 🙏", " /'.-c    　   * ●  ¸.　　°     ° 　¸.    ");
-				msg("My personal Yoda, you are. 🙏", " |  /T      　　°     ° 　¸.     ¸ .　　  ");
-				msg("My personal Yoda, you are. 🙏", "_)_/LI");
-			} else {
-				msg("Kudos 🌟", "Did you know that since Java8 is out you can use streams? Try it!");
-				msg("Kudos 🌟", "");
-				msg("Kudos 🌟", "int[] galaxies = {37, 3, 2};");
-				msg("Kudos 🌟", "int totalStars = Arrays.stream(galaxies).sum(); // 42");
-			}
+			// if (existsInFile("Arrays.stream(galaxies).sum()", new File("./src/main/java/com/yourself/Universe.java"))) {
+			// 	msg("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ");
+			// 	msg("My personal Yoda, you are. 🙏", "           　★ °  ☆ ¸. ¸ 　★　 :.　 .   ");
+			// 	msg("My personal Yoda, you are. 🙏", "__.-._     ° . .　　　　.　☾ ° 　. *   ¸ .");
+			// 	msg("My personal Yoda, you are. 🙏", "'-._\\7'      .　　° ☾  ° 　¸.☆  ● .　　　");
+			// 	msg("My personal Yoda, you are. 🙏", " /'.-c    　   * ●  ¸.　　°     ° 　¸.    ");
+			// 	msg("My personal Yoda, you are. 🙏", " |  /T      　　°     ° 　¸.     ¸ .　　  ");
+			// 	msg("My personal Yoda, you are. 🙏", "_)_/LI");
+			// } else {
+			// 	msg("Kudos 🌟", "Did you know that since Java8 is out you can use streams? Try it!");
+			// 	msg("Kudos 🌟", "");
+			// 	msg("Kudos 🌟", "int[] galaxies = {37, 3, 2};");
+			// 	msg("Kudos 🌟", "int totalStars = Arrays.stream(galaxies).sum(); // 42");
+			// }
 		} catch (AssertionError ae) {
 			success(false);
 			msg("Oops! 🐞", ae.getMessage());
-			msg("Hint 💡", "Did you properly accumulate all stars into 'totalStars'? 🤔");
 		}
 	}
 
